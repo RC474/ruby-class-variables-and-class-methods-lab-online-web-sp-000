@@ -12,4 +12,13 @@ class Song
   def self.count 
     @@count 
   end
+  
+  def self.genre
+    @@genre = []
+    if @@genre.include?(self)
+      return genre
+    else
+      @@genre << self
+    end
+  end
 end
